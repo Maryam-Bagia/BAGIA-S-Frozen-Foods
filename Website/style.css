@@ -1,0 +1,110 @@
+
+/* BAGIA'S FROZEN FOODS - STYLE */
+:root{
+  --navy: #003b73;
+  --turquoise: #1ca1a1;
+  --ice: #7ec8e3;
+  --accent: #ffd740;
+  --muted: #6b7280;
+}
+
+/* Global */
+body{
+  font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+  background: linear-gradient(180deg, #ffffff 0%, #f6fbff 100%);
+  color: #0f172a;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+}
+
+/* Navbar */
+.navbar-brand .brand-title{
+  font-weight:800;
+  font-size:1.15rem;
+  color:var(--navy);
+}
+.navbar-brand .brand-sub{
+  font-size:0.8rem;
+  color:var(--muted);
+}
+
+/* Logo sizes */
+.logo-img{ width:70px; height:70px; object-fit:contain; border:#003b73; border-radius: 0%; }
+
+/* Hero */
+.hero{
+  padding:54px 0;
+  background: linear-gradient(180deg, rgba(126,200,227,0.12), rgba(255,255,255,0));
+}
+.hero h1{
+  font-size:2.1rem;
+  color:var(--navy);
+  font-weight:800;
+}
+.hero .lead{ color: #334155; max-width:640px; }
+.btn-turquoise{
+  background:var(--turquoise);
+  color:white;
+  border:none;
+}
+.btn-order{ background:var(--navy); color:white; }
+
+/* Features badges */
+.badge.feature{
+  background: rgba(28,193,161,0.12);
+  color:var(--turquoise);
+  border-radius:10px;
+  padding:6px 10px;
+  font-weight:600;
+}
+
+/* Product card */
+.product-card{ border-radius:12px; border: none; transition: transform .18s ease, box-shadow .18s ease; }
+.product-card:hover{ transform: translateY(-6px); box-shadow: 0 12px 30px rgba(2,6,23,0.08); }
+.img-wrapper {
+  height: 160px;
+  background: linear-gradient(135deg, rgba(28,193,161,0.06), rgba(0,59,115,0.04));
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.product-card:hover .img-wrapper img {
+  transform: scale(1.08);
+}
+
+
+/* Prices and buttons */
+.price{ color:var(--turquoise); font-weight:700; }
+.btn-primary{ background:var(--navy); border:none; }
+.btn-outline-primary{ color:var(--navy); border-color: rgba(0,59,115,0.12); }
+
+/* Gallery */
+.gallery-img{ width:100%; height:160px; object-fit:cover; }
+
+/* Placeholder images */
+.placeholder-img{
+  height:160px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:var(--muted);
+  background:linear-gradient(180deg,#fff,#f8fafc);
+  font-weight:600;
+}
+
+/* Footer */
+.footer{ background:var(--navy); color:white; }
+.footer-logo{ width:65px; height:65px; object-fit:contain; }  
+
+/* Responsive tweaks */
+@media (max-width:767px){
+  .hero{ padding:36px 0; }
+  .img-placeholder{ height:140px; }
+}

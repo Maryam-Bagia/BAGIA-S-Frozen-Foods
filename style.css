@@ -1,0 +1,213 @@
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background-color: #3d2b1f;
+      color: #fff;
+    }
+
+    header {
+      background-color: #8B4C24;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header img {
+      max-width: 200px;
+      height: auto;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #5a3220;
+      padding: 10px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .hero {
+      background: url('https://images.unsplash.com/photo-1504674900247-0877df9cc836') no-repeat center center/cover;
+      padding: 100px 20px;
+      text-align: center;
+      color: white;
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 20px;
+    }
+
+    .about, .menu, .contact {
+      padding: 50px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #f4eae6;
+    }
+
+    .menu-items {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .menu-item {
+      background-color: #5a3220;
+      padding: 20px;
+      border-radius: 8px;
+      text-align: center;
+    }
+
+    .menu-item h3 {
+      margin-bottom: 10px;
+    }
+
+    .contact form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .contact input, .contact textarea {
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+    }
+
+    .contact button {
+      background-color: #8B4C24;
+      color: white;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .contact button:hover {
+      background-color: #a85d34;
+    }
+
+    footer {
+      background-color: #2b1b12;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+    }
+
+    header img {
+      width: 220px;
+      height: 140px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+.social-media {
+  padding: 20px;
+}
+
+.social-media h2 {
+  margin-bottom: 10px;
+}
+
+.social-media ul {
+  list-style: none;
+  padding: 0;
+  display: inline-block;
+  text-align: left;
+}
+
+.social-media li {
+  margin: 10px 0;
+}
+
+.social-media a {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  color: white;
+  transition: background-color 0.3s;
+}
+
+.social-media a i {
+  font-size: 20px;
+}
+
+/* Platform-specific colors */
+.social-media li:nth-child(1) a {
+  background-color: #3b5998; /* Facebook blue */
+}
+
+.social-media li:nth-child(2) a {
+  background-color: #E1306C; /* Instagram pink */
+}
+
+.social-media li:nth-child(3) a {
+  background-color: #1DA1F2; /* Twitter blue */
+}
+
+.social-media a:hover {
+  opacity: 0.85;
+}
+
+.todays-special img {
+  max-width: 100%;        
+  height: auto;           
+  width: 300px;           
+  display: block;   
+  margin: 50px;   
+  border-radius: 12px;    
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); 
+}
+
+.frozen-items img {
+  max-width: 100%;        
+  height: auto;           
+  width: 300px;           
+  display: block;   
+  margin: 50px;   
+  border-radius: 12px;    
+  box-shadow: 0 20px 12px rgba(0, 0, 0, 0.2); 
+}
+
+.image-row{
+  display:flex;
+  gap:5px;
+  align-items:left;
+}
+
+.image-row img{
+  width:25%;
+  height:auto;
+}
+
+.location {
+  padding:20px;
+}
