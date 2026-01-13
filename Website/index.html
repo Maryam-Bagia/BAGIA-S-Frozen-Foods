@@ -1,61 +1,87 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Bagia's Frozen Foods</title>
+  <title>Bagia's Frozen Foods | Premium Homemade Taste</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet">
+
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="style.css" rel="stylesheet">
 </head>
+
 <body>
+
   <!-- NAVBAR -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+  <nav class="navbar navbar-expand-lg fixed-top">
     <div class="container">
       <a class="navbar-brand d-flex align-items-center gap-3" href="index.html">
-        <img src="C:\Users\Bagia Maryam Moosaji\Downloads\FROZEN FOOD LOGO 1.png" alt="Bagia's Logo" class="logo-img">
-        <div>
-          <div class="brand-title">BAGIA'S</div>
-          <div class="brand-sub">Frozen Foods</div>
+        <!-- Logo Text Fallback if image fails -->
+        <div class="d-flex flex-column">
+          <span class="brand-title">BAGIA'S</span>
+          <span class="brand-sub">Frozen Foods</span>
         </div>
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navMenu">
-        <ul class="navbar-nav ms-auto align-items-lg-center">
-          <li class="nav-item"><a class="nav-link" href="#products">Products</a></li>
+        <ul class="navbar-nav ms-auto align-items-center">
+          <li class="nav-item"><a class="nav-link" href="#products">Popular</a></li>
           <li class="nav-item"><a class="nav-link" href="products.html">Full Menu</a></li>
           <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
           <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-          <li class="nav-item ms-2"><a class="btn btn-primary btn-order" href="#order">Order Now</a></li>
+          <li class="nav-item ms-lg-3 mt-3 mt-lg-0">
+            <a class="btn btn-primary" href="#order">Order Now</a>
+          </li>
         </ul>
       </div>
     </div>
   </nav>
 
   <!-- HERO -->
-  <header class="hero">
-    <div class="container d-flex flex-column flex-md-row align-items-center gap-4">
-      <div class="hero-text">
-        <h1>Fresh • Homemade • Ready-to-Fry</h1>
-        <p class="lead">Premium hygiene, authentic taste. Available in 1 kg packs — ideal for homes, events and shops.</p>
-        <div class="mt-4">
-          <a href="products.html" class="btn btn-outline-primary me-2">See Full Menu</a>
-          <a class="btn btn-turquoise" href="https://wa.me/918780448636?text=Hi%20Bagia's%20Foods%2C%20I%20want%20to%20order%20%2F%20inquire." target="_blank">Order on WhatsApp</a>
+  <header class="hero d-flex align-items-center">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6 hero-text reveal-on-scroll">
+          <span class="text-uppercase text-primary fw-bold mb-2 d-block">Est. 2025</span>
+          <h1>Classic Taste. <br> Made Extraordinary.</h1>
+          <p class="lead">Experience the authentic taste of premium, hygienic, and ready-to-fry frozen delicacies.
+            Perfect for your home, events, or shop.</p>
+
+          <div class="d-flex flex-wrap gap-3 mt-4">
+            <a href="products.html" class="btn btn-outline-primary">View Full Menu</a>
+            <a class="btn btn-whatsapp"
+              href="https://wa.me/918780448636?text=Hi%20Bagia's%20Foods%2C%20I%20want%20to%20order%20%2F%20inquire."
+              target="_blank">
+              Chat on WhatsApp
+            </a>
+          </div>
+
+          <div class="mt-5 d-flex gap-2 flex-wrap">
+            <span class="feature-badge">✨ Freshly Frozen</span>
+            <span class="feature-badge">🛡️ 100% Hygienic</span>
+            <span class="feature-badge">🏡 Homemade</span>
+            <span class="feature-badge">🚫 No Preservatives</span>
+          </div>
         </div>
-        <div class="features mt-4 d-flex gap-3 flex-wrap">
-          <span class="badge feature">Hygienic</span>
-          <span class="badge feature">Freshly Frozen</span>
-          <span class="badge feature">Homemade</span>
-          <span class="badge feature">Ready to Fry</span>
-          <span class="badge feature">NO Preseratives</span>
+
+        <div class="col-lg-6 position-relative reveal-on-scroll">
+          <div class="hero-card p-4 text-center">
+            <img src="tikka samusa.jpeg" alt="Featured Product" class="img-fluid rounded-3 mb-3 shadow-sm"
+              style="max-height: 300px; object-fit: cover; width: 100%;">
+            <h5 class="mb-1">Shop Owners Special</h5>
+            <p class="text-muted small">Get a 6-piece sample tasting pack to try before you stock.</p>
+            <a href="#order" class="btn btn-sm btn-primary px-4">Request Sample</a>
+          </div>
         </div>
-      </div>
-      <div class="hero-card p-4 rounded-3 shadow-sm bg-white text-center">
-        <img src="/mnt/data/FROZEN FOOD LOGO 1.png" alt="logo" class="w-75 mb-3">
-        <h5 class="mb-1">Sample Pack</h5>
-        <p class="text-muted small">6-piece tasting pack available for shop trials.</p>
-        <a href="#order" class="btn btn-primary">Request Sample</a>
       </div>
     </div>
   </header>
@@ -63,131 +89,173 @@
   <!-- PRODUCTS -->
   <section id="products" class="py-5">
     <div class="container">
-      <div class="d-flex justify-content-between align-items-end mb-3">
-        <h2 class="section-title">Popular Items</h2>
-        <a href="products.html" class="link-primary">View full menu</a>
+      <div class="text-center mb-5 reveal-on-scroll">
+        <h2 class="section-title">Customer Favorites</h2>
+        <p class="text-muted">Our best-selling items, ready to fry in minutes.</p>
       </div>
 
-      <div class="row g-4">
+      <div class="row g-4 justify-content-center">
         <!-- Card 1 -->
-        <div class="col-12 col-md-6 col-lg-4">
-          <div class="card product-card h-100">
+        <div class="col-md-6 col-lg-4 reveal-on-scroll">
+          <div class="card product-card">
+            <div class="img-wrapper">
+              <img src="cheese ball.jpeg" alt="Cheese Corn Balls">
+            </div>
             <div class="card-body d-flex flex-column">
-              <div class="img-placeholder mb-3">Cheese Corn Balls</div>
-              <h5 class="card-title">Cheese Corn Balls</h5>
-              <p class="card-text text-muted">Crispy outside with gooey cheese inside. Ready-to-fry.</p>
-              <div class="mt-auto d-flex justify-content-between align-items-center">
-                <div class="price">₹500 / kg</div>
-                <div class="btn-group">
-                  <a href="products.html#cheese-corn-balls" class="btn btn-sm btn-outline-primary">Details</a>
-                  <a href="https://wa.me/918780448636?text=Hi%20I%20want%20to%20order%20Cheese%20Corn%20Balls%20(1kg)" target="_blank" class="btn btn-sm btn-primary">WhatsApp</a>
-                </div>
+              <div class="d-flex justify-content-between align-items-start mb-2">
+                <h5 class="card-title">Cheese Corn Balls</h5>
+                <span class="price-tag">₹500<small class="text-muted fw-normal"
+                    style="font-size:0.8rem">/kg</small></span>
+              </div>
+              <p class="card-text text-muted small mb-4">Golden crispy outside with a melting cheese and sweet corn
+                center. A party favorite.</p>
+              <div class="mt-auto d-flex gap-2">
+                <a href="products.html" class="btn btn-sm btn-outline-primary flex-fill">Details</a>
+                <a href="https://wa.me/918780448636?text=Hi%20I%20want%20to%20order%20Cheese%20Corn%20Balls%20(1kg)"
+                  target="_blank" class="btn btn-sm btn-whatsapp flex-fill">Order</a>
               </div>
             </div>
           </div>
         </div>
 
         <!-- Card 2 -->
-        <div class="col-12 col-md-6 col-lg-4">
-          <div class="card product-card h-100">
+        <div class="col-md-6 col-lg-4 reveal-on-scroll">
+          <div class="card product-card">
+            <div class="img-wrapper">
+              <img src="tikka samusa.jpeg" alt="Chicken Samosa">
+            </div>
             <div class="card-body d-flex flex-column">
-              <div class="img-placeholder mb-3">Chicken Samosa</div>
-              <h5 class="card-title">Mini Samosa (Chicken / Veg)</h5>
-              <p class="card-text text-muted">Classic samosa taste, perfectly spiced, hygienically packed.</p>
-              <div class="mt-auto d-flex justify-content-between align-items-center">
-                <div class="price">₹450 - ₹600 / kg</div>
-                <div class="btn-group">
-                  <a href="products.html#samosa" class="btn btn-sm btn-outline-primary">Details</a>
-                  <a href="https://wa.me/918780448636?text=Hi%20I%20want%20to%20order%20Samosa%20(1kg)" target="_blank" class="btn btn-sm btn-primary">WhatsApp</a>
-                </div>
+              <div class="d-flex justify-content-between align-items-start mb-2">
+                <h5 class="card-title">Chicken Samosa</h5>
+                <span class="price-tag">₹600<small class="text-muted fw-normal"
+                    style="font-size:0.8rem">/kg</small></span>
+              </div>
+              <p class="card-text text-muted small mb-4">Perfectly spiced chicken filling in a crunchy triangle pastry.
+                Authentic taste.</p>
+              <div class="mt-auto d-flex gap-2">
+                <a href="products.html" class="btn btn-sm btn-outline-primary flex-fill">Details</a>
+                <a href="https://wa.me/918780448636?text=Hi%20I%20want%20to%20order%20Chicken%20Samosa%20(1kg)"
+                  target="_blank" class="btn btn-sm btn-whatsapp flex-fill">Order</a>
               </div>
             </div>
           </div>
         </div>
 
         <!-- Card 3 -->
-        <div class="col-12 col-md-6 col-lg-4">
-          <div class="card product-card h-100">
+        <div class="col-md-6 col-lg-4 reveal-on-scroll">
+          <div class="card product-card">
+            <div class="img-wrapper">
+              <img src="nuggets.jpeg" alt="Chicken Nuggets">
+            </div>
             <div class="card-body d-flex flex-column">
-              <div class="img-placeholder mb-3">Chicken Nuggets</div>
-              <h5 class="card-title">Chicken Nuggets</h5>
-              <p class="card-text text-muted">Crunchy bites — family favorite. Ready-to-fry.</p>
-              <div class="mt-auto d-flex justify-content-between align-items-center">
-                <div class="price">₹600 / kg</div>
-                <div class="btn-group">
-                  <a href="products.html#nuggets" class="btn btn-sm btn-outline-primary">Details</a>
-                  <a href="https://wa.me/918780448636?text=Hi%20I%20want%20to%20order%20Chicken%20Nuggets%20(1kg)" target="_blank" class="btn btn-sm btn-primary">WhatsApp</a>
-                </div>
+              <div class="d-flex justify-content-between align-items-start mb-2">
+                <h5 class="card-title">Chicken Nuggets</h5>
+                <span class="price-tag">₹600<small class="text-muted fw-normal"
+                    style="font-size:0.8rem">/kg</small></span>
+              </div>
+              <p class="card-text text-muted small mb-4">Juicy, tender chicken bites coated in breadcrumbs. Kids love
+                them!</p>
+              <div class="mt-auto d-flex gap-2">
+                <a href="products.html" class="btn btn-sm btn-outline-primary flex-fill">Details</a>
+                <a href="https://wa.me/918780448636?text=Hi%20I%20want%20to%20order%20Chicken%20Nuggets%20(1kg)"
+                  target="_blank" class="btn btn-sm btn-whatsapp flex-fill">Order</a>
               </div>
             </div>
           </div>
         </div>
+      </div>
 
-      </div> <!-- row -->
+      <div class="text-center mt-5">
+        <a href="products.html" class="btn btn-outline-primary px-5 rounded-pill">View All Products</a>
+      </div>
     </div>
   </section>
 
   <!-- GALLERY -->
-  <section id="gallery" class="py-5 bg-light">
-    <div class="container">
-      <h2 class="section-title">Packaging & Menu Gallery</h2>
-      <p class="text-muted">Photos of packaging, sample packs and full menu.</p>
+  <section id="gallery" class="py-5 gallery-section">
+    <div class="container reveal-on-scroll">
+      <h2 class="section-title text-center text-dark" style="margin-left: 50%; transform: translateX(-50%);">Our Gallery
+      </h2>
       <div class="row g-3">
         <div class="col-6 col-md-3">
-          <img src="/mnt/data/FROZEN FOOD LOGO 1.png" class="gallery-img rounded shadow-sm" alt="packaging">
+          <img src="nuggets.jpeg" class="gallery-img" alt="Chicken Nuggets">
         </div>
         <div class="col-6 col-md-3">
-          <img src="/mnt/data/Ramzan_Frozen_List_English.jpg" class="gallery-img rounded shadow-sm" alt="menu">
+          <img src="spring roll.jpeg" class="gallery-img" alt="Spring Roll">
         </div>
         <div class="col-6 col-md-3">
-          <div class="placeholder-img rounded shadow-sm">Packaging Mockup</div>
+          <img src="cheese ball.jpeg" class="gallery-img" alt="Cheese Ball">
         </div>
         <div class="col-6 col-md-3">
-          <div class="placeholder-img rounded shadow-sm">Sample Pack Photo</div>
+          <img src="tikka samusa.jpeg" class="gallery-img" alt="Samosa">
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ORDER -->
-  <section id="contact" class="py-5">
+  <!-- ORDER / CONTACT -->
+  <section id="contact" class="py-5 contact-section">
     <div class="container">
-      <h2 class="section-title">Place an Order</h2>
-      <div class="row g-4">
-        <div class="col-md-6">
-          <form id="orderForm" action="order.php" method="post" class="card p-4 shadow-sm">
-            <div class="mb-3">
-              <label class="form-label">Name</label>
-              <input name="name" required class="form-control" placeholder="Your name">
-            </div>
-            <div class="mb-3">
-              <label class="form-label">Phone (WhatsApp)</label>
-              <input name="phone" required class="form-control" placeholder="+91 9XXXXXXXXX">
-            </div>
-            <div class="mb-3">
-              <label class="form-label">Order Details</label>
-              <textarea name="details" required class="form-control" rows="4" placeholder="Item names, quantity in kg, preferred date"></textarea>
-            </div>
-            <div class="d-flex gap-2">
-              <button type="submit" class="btn btn-primary">Send Order</button>
-              <a class="btn btn-outline-success" target="_blank" href="https://wa.me/918780448636?text=Hi%20I%20would%20like%20to%20order%20from%20Bagia's%20Frozen%20Foods.">Order via WhatsApp</a>
-            </div>
-          </form>
-        </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-10">
+          <div class="card shadow-lg border-0 overflow-hidden rounded-4 reveal-on-scroll">
+            <div class="row g-0">
+              <div class="col-md-6 bg-light p-5">
+                <h3 class="mb-4">Place an Order</h3>
+                <form id="orderForm" action="order.php" method="post">
+                  <div class="mb-3">
+                    <label class="form-label small text-muted text-uppercase fw-bold">Name</label>
+                    <input name="name" required class="form-control" placeholder="Your Name">
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label small text-muted text-uppercase fw-bold">Phone (WhatsApp)</label>
+                    <input name="phone" required class="form-control" placeholder="+91 9XXXXXXXXX">
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label small text-muted text-uppercase fw-bold">Order Details</label>
+                    <textarea name="details" required class="form-control" rows="3"
+                      placeholder="I would like to order..."></textarea>
+                  </div>
+                  <button type="submit" class="btn btn-primary w-100">Send Inquiry</button>
+                </form>
 
-        <div class="col-md-6">
-          <div class="card p-4 shadow-sm">
-            <h5>Contact</h5>
-            <p class="mb-1">Moosa Bagia</p>
-            <p class="mb-1"><strong>Call / WhatsApp:</strong> <a href="tel:+918780448636">+91 8780448636</a></p>
-            <p class="mb-3"><strong>Alternate:</strong> <a href="tel:+917016340240">+91 7016340240</a></p>
+                <div class="text-center mt-3">
+                  <small class="text-muted">Or chat directly</small><br>
+                  <a href="https://wa.me/918780448636" class="text-success fw-bold text-decoration-none">WhatsApp Us</a>
+                </div>
+              </div>
 
-            <h6 class="mt-3">Shop onboarding</h6>
-            <ul class="mb-0">
-              <li>Sample packs (6 pcs) for tasting</li>
-              <li>20% retail margin suggested</li>
-              <li>Fridge stickers and sample pricing labels provided</li>
-            </ul>
+              <div class="col-md-6 bg-primary text-white p-5 d-flex flex-column justify-content-center">
+                <h2>Contact Us</h2>
+                <p class="opacity-75 mb-4">Have questions? Reach out to us directly.</p>
+
+                <div class="mb-4">
+                  <div class="fw-bold fs-5">Moosa Bagia</div>
+                  <div class="opacity-75">Proprietor</div>
+                </div>
+
+                <div class="mb-3">
+                  <img src="https://img.icons8.com/ios-filled/50/ffffff/phone.png" width="24" class="me-2"
+                    style="opacity:0.8" alt="phone">
+                  <a href="tel:+918780448636" class="text-white text-decoration-none fw-bold">+91 8780448636</a>
+                </div>
+
+                <div class="mb-3">
+                  <img src="https://img.icons8.com/ios-filled/50/ffffff/phone.png" width="24" class="me-2"
+                    style="opacity:0.8" alt="phone">
+                  <a href="tel:+917016340240" class="text-white text-decoration-none">+91 7016340240</a>
+                </div>
+
+                <hr class="border-white opacity-25 my-4">
+
+                <h6 class="text-uppercase letter-spacing-2 mb-3">Shop Onboarding</h6>
+                <ul class="list-unstyled opacity-75">
+                  <li class="mb-2">✓ Sample tasting packs available</li>
+                  <li class="mb-2">✓ 20% Retail margin</li>
+                  <li>✓ Promotions material provided</li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -195,18 +263,22 @@
   </section>
 
   <!-- FOOTER -->
-  <footer class="py-4 footer">
-    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
-      <div class="d-flex align-items-center gap-3">
-        <img src="C:\Users\Bagia Maryam Moosaji\Downloads\ChatGPT Image Nov 25, 2025, 08_09_00 PM.png" alt="logo" class="footer-logo">
-        <div>
-          <div class="fw-bold">Bagia's Frozen Foods</div>
-          <div class="small">Hygienic • Homemade • Ready-to-Fry</div>
+  <footer>
+    <div class="container text-center text-md-start">
+      <div class="d-flex flex-column flex-md-row justify-content-between align-items-center gap-4">
+        <div class="d-flex align-items-center gap-3">
+          <!-- Fallback logo circle -->
+          <div class="footer-logo d-flex align-items-center justify-content-center text-primary fw-bold fs-4">B</div>
+          <div>
+            <div class="fw-bold fs-5">Bagia's Frozen Foods</div>
+            <div class="small opacity-75">Quality you can trust.</div>
+          </div>
         </div>
-      </div>
-      <div class="text-md-end">
-        <div>Call / WhatsApp: <a href="tel:+918780448636" class="text-white fw-bold">+91 8780448636</a></div>
-        <div class="small">© 2025 Bagia's Frozen Foods</div>
+
+        <div class="text-center text-md-end">
+          <div class="mb-2">Order Line: <a href="tel:+918780448636" class="text-white fw-bold">+91 8780448636</a></div>
+          <div class="small opacity-50">© 2025 Bagia's Frozen Foods. All rights reserved.</div>
+        </div>
       </div>
     </div>
   </footer>
@@ -214,4 +286,5 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   <script src="script.js"></script>
 </body>
+
 </html>
