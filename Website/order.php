@@ -1,6 +1,4 @@
 <?php
-// Simple backend: save order to a CSV file and redirect to WhatsApp for confirmation.
-// Note: This is a minimal example. For production, validate inputs and secure file paths.
 
 if($_SERVER['REQUEST_METHOD'] === 'POST'){
     $name = trim($_POST['name'] ?? '');
@@ -20,7 +18,6 @@ if($_SERVER['REQUEST_METHOD'] === 'POST'){
         fclose($fp);
     }
 
-    // Redirect user to WhatsApp with prefilled message
     $msg = rawurlencode("Hi Bagia's Frozen Foods,\nI would like to place an order:\nName: $name\nPhone: $phone\nOrder: $details\n");
     $wa = "https://wa.me/918780448636?text={$msg}";
     header('Location: ' . $wa);
