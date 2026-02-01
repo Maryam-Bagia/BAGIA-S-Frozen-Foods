@@ -11,9 +11,9 @@ if($_SERVER['REQUEST_METHOD'] === 'POST'){
         exit;
     }
 
-    $line = [$time, str_replace(["\r","\n"],[' ',' '],$name), $phone, str_replace(["\r","\n"],[' ',' '],$details)];
-    $fp = fopen('orders.csv','a');
-    if($fp){
+    $line = [$time, str_replace(["\r", "\n"], [' ', ' '], $name), $phone, str_replace(["\r", "\n"], [' ', ' '], $details)];
+    $fp = fopen('orders.csv', 'a');
+    if ($fp) {
         fputcsv($fp, $line);
         fclose($fp);
     }
@@ -26,4 +26,3 @@ if($_SERVER['REQUEST_METHOD'] === 'POST'){
     header('Location: index.html');
     exit;
 }
-?>
